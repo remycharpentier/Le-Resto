@@ -1,0 +1,156 @@
+@charset "utf-8";
+
+/* -----------------------------------------------------*/
+/* GLOBAL */
+/* -----------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css?family=Allura|Poppins|Roboto');
+
+html {
+	box-sizing: border-box;
+	height: 100%;
+	font-size: 100%;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+body {
+	position: relative;
+	height: 100%;
+	font-family: "Roboto", sans-serif;
+	font-size: 1em;
+	font-weight: 300;
+	line-height: 1.625em; /*26px*/
+	color: #76787c;
+	background-color: #fff;
+	-webkit-font-smoothing: antialiased;
+}
+
+img{
+	max-width: 100%; /* 100% de la boite !PARENT! */
+	height: auto;
+	vertical-align: bottom;
+}
+
+/* links */
+/* -----------------------------------------------------*/
+
+a {
+	text-decoration: none;
+	color: #D35F60;
+}
+
+a:active,
+a:hover,
+a:focus {
+	color: #934243;
+}
+
+/* typographie */
+/* -----------------------------------------------------*/
+
+h1, .h1-like, 
+h2, .h2-like, 
+h3, .h3-like, 
+h4, .h4-like, 
+h5, .h5-like, 
+h6, .h6-like {
+	font-family: 'Allura';
+	font-weight: 700;
+	color: #1C1F26;
+	margin: 0 0 0.71875em 0;
+	line-height: 1.25em;
+}
+
+h1, .h1-like {
+	font-size: 2em;
+}
+h2, .h2-like {
+	font-size: 1.75em;
+}
+h3, .h3-like {
+	font-size: 1.5em;
+}
+h4, .h4-like {
+	font-size: 1.25em;
+}
+h5, .h5-like {
+	font-size: 1.125em;
+}
+h6, .h6-like {
+	font-size: 1em;
+}
+p {
+	margin: 0 0 0.71875em 0;
+}
+
+/* Helpers */
+/* -------------------------------------------------------- */
+.text-left{text-align:left}
+.text-center{text-align:center}
+.text-right{text-align:right}
+.text-justify{text-align:justify}
+
+.btn{
+	background-color: #d7142b;
+	padding:12px 20px;
+	color:white;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-weight:bold;
+	display:inline-block;
+	margin:0 auto;
+}
+
+
+
+/* Your Code Goes Here */
+header{
+	z-index: 9999; /*Header toujours au top*/
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: #fff;
+	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3)
+}
+header #main{
+	flex-grow:2;
+	text-align: center;
+}
+nav#social{
+	text-align: right;
+}
+header nav li{display: inline-block;}
+header nav li a{
+	text-transform: uppercase;
+	padding: 5px 10px;
+	margin-right: 20px;
+	font-weight: 700;
+}
+#section-1{
+	background-image: url('../img/bg-slider-06.jpg');
+	background-position: center center;
+	background-size: cover;
+	padding: 300px 0; /* ou 37vh 0 pour des valeurs dynamiques */ /* *vh = valenr en %age de la hauter (viewheight)*/
+	text-align: center;
+	color: #fff;
+}
+#section-1 h1{
+	font-size: 4rem;
+	color: #AF7746;
+	line-height: 2.4rem;
+}
+#section-1 h1 span{
+	font-family:"Poppins" ;
+	color:#fff;
+	text-transform: uppercase;
+	display: block;
+	letter-spacing: 10px;
+	font-size: 3rem;
+}
+#section-1 p{
+	font-size: 1.2em;
+	margin-top: 50px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
